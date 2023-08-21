@@ -1,2 +1,2 @@
 # ih-web
-revamped portfolio
+see code in portfolio folder

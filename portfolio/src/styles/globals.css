@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .gradient-nav {
+        @apply bg-gradient-to-b from-[lightgreen] to-[beige]
+    }
+}
