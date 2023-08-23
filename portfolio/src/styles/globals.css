@@ -16,4 +16,8 @@
     .min-h-screeen {
         min-height: calc(100vh - 58px);
     }
+
+    .hover-icon {
+        @apply hover:text-lightgreen duration-300 hover:scale-110
+    }
 }

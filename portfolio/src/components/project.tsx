@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa';
 
 export default function Project({ projectData }) {
   return (
-    <div className='w-6/12'>
+    <div className='sm:w-7/12 w-10/12'>
       {projectData.map((project: any, index : any) => (
         <div key={index} className='text-green border-2 border-green rounded p-4 mb-5'>
           <div className='flex flex-row gap-2 items-baseline'>
@@ -11,8 +11,8 @@ export default function Project({ projectData }) {
                 <FaGithub size={22} />
             </a>
           </div>
-          <p>{project.description}</p>
-          <p><span className='font-semibold'>Technologies: </span>{project.techstack}</p>
+          <p className='my-2'>{project.description}</p>
+          <p><span className='font-semibold mb-2'>Technologies: </span>{project.techstack}</p>
         </div>
       ))}
     </div>
