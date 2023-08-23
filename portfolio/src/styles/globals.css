@@ -6,4 +6,14 @@
     .gradient-nav {
         @apply bg-gradient-to-b from-[lightgreen] to-[beige]
     }
+
+    .gradient-text {
+        background-image: linear-gradient(to bottom, lightgreen, green);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .min-h-screeen {
+        min-height: calc(100vh - 58px);
+    }
 }

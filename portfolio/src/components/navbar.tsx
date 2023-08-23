@@ -6,7 +6,7 @@ export default function Navbar({ navbarData }) {
     <nav className="flex flex-row items-center justify-between p-2 gradient-nav border-b-2 border-green">
       <div className="flex items-center">
         <a href = "/">
-            <Image src="/smiski_laptop.png" alt="Disruptive Logo" width={40} height={40} className="ml-2"/>
+            <Image src="/smiski_laptop.png" alt="Smiski on Laptop" width={40} height={40} className="ml-2"/>
         </a>
       </div>
       <div className="ml-auto">

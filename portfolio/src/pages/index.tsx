@@ -1,7 +1,8 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import Navbar from "~/components/navbar";
 import { homeData } from "~/data/navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,9 +12,12 @@ export default function Home() {
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/smiski_laptop.png" />
       </Head>
-      <Navbar navbarData={ homeData }/>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-beige">
-      </main>
+      <Navbar navbarData={homeData} />
+      <div className="flex min-h-screeen flex-col bg-beige justify-center items-center">
+        <Image src="/smiski_yoga.png" alt="Smiski doing yoga" width={120} height={120} className="ml-2" />
+        <h1 className="text-4xl font-bold text-green">Hello, I'm <span className="gradient-text">Isabelle Huang</span>!</h1>
+        <p className="text-green text-lg flex items-center mt-3 justify-center h-full w-4/5 text-center">I am a Computer Engineering student at the University of Waterloo, interested in software development.</p>
+      </div>
     </>
   );
 }
