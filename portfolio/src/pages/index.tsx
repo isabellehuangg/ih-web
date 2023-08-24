@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex min-h-screeen flex-col bg-beige justify-center items-center text-green">
         <Image src="/smiski_yoga.png" alt="Smiski doing yoga" width={120} height={120} className="ml-2" />
         <h1 className="text-4xl font-bold text-center sm:items-center">
-          Hello, I'm <span className="gradient-text">Isabelle</span>!
+          Hello, Im <span className="gradient-text">Isabelle</span>!
         </h1>
         <p className="text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12">
           I am a Computer Engineering student at the University of Waterloo, interested in software development and Mob Psycho.
