@@ -22,11 +22,5 @@ export const projects = [
         link: "https://github.com/isabellehuangg/uClone",
         description: "A Discord bot that detects whether a message has the 5-7-5 syllable structure of a haiku, and generates messages from a client's history.",
         techstack: "Discord API, MongoDB, Python"
-    },
-    {
-        title: "NAVIGATE-19",
-        link: "https://github.com/yippyym/navigate-19",
-        description: "A contact tracing application that allow for ease and prociffiency when checking for potential COVID risks in a classroom setting through location tracking. Built during Hack the North 2021.",
-        techstack: "Dart, Flutter, Google Maps API"
     }
 ]

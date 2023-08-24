@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply scroll-smooth !important;
+}
+
 @layer components {
     .gradient-nav {
         @apply bg-gradient-to-b from-[lightgreen] to-[beige]
+    }
+
+    .gradient-button {
+        @apply bg-gradient-to-tl from-[lightgreen] to-[green]
     }
 
     .gradient-text {
