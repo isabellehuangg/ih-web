@@ -1,9 +1,21 @@
+import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 
-export default function Project({ projectData }) {
+interface ProjectItem {
+  title: string;
+  link: string;
+  description: string;
+  techstack: string;
+}
+
+interface ProjectProps {
+  projectData: ProjectItem[];
+}
+
+const Project: React.FC<ProjectProps> = ({ projectData }) => {
   return (
     <div className='sm:w-7/12 w-10/12'>
-      {projectData.map((project: any, index : any) => (
+      {projectData.map((project, index) => (
         <div key={index} className='text-green border-2 border-green rounded p-4 mb-5'>
           <div className='flex flex-row gap-2 items-baseline'>
             <h1 className="text-2xl font-semibold gradient-text">{project.title}</h1>
@@ -18,3 +30,5 @@ export default function Project({ projectData }) {
     </div>
   );
 }
+
+export default Project;
