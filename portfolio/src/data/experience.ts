@@ -10,6 +10,7 @@ export const experience = [
         role: "Software Developer",
         company: "UW Midnight Sun",
         time: "Jun. 2023 - Present",
-        description: "Completed the SHAD program virtually through the York University campus"
+        description: "Worked on data migration of Victini: a real-time communication system between the car and multiple microservices",
+        technologies: "Python, Docker"
     }
 ]
