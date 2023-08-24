@@ -12,10 +12,10 @@ export default function Home() {
         <link rel="icon" href="/smiski_laptop.png" />
       </Head>
       <Navbar navbarData={homeData} />
-      <div className="flex min-h-screeen flex-col bg-beige justify-center items-center">
+      <div className="flex min-h-screeen flex-col bg-beige justify-center items-center text-green">
         <Image src="/smiski_yoga.png" alt="Smiski doing yoga" width={120} height={120} className="ml-2" />
-        <h1 className="text-4xl font-bold text-green">Hello, Im <span className="gradient-text">Isabelle Huang</span>!</h1>
-        <p className="text-green text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12">I am a Computer Engineering student at the University of Waterloo, interested in software development and Mob Psycho.</p>
+        <h1 className="text-4xl font-bold flex items-center justify-center text-center sm:w-7/12 w-10/12">Hello, Im <span className="gradient-text">Isabelle Huang</span>!</h1>
+        <p className="text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12">I am a Computer Engineering student at the University of Waterloo, interested in software development and Mob Psycho.</p>
       </div>
     </>
   );

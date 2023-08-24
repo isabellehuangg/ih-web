@@ -3,7 +3,7 @@ export const experience = [
         role: "Software Test Engineer",
         company: "Nicoya",
         time: "May 2023 - Aug. 2023",
-        description: "Automated manual testing and fixed; created UI bugs and components for new ALTO software.",
+        description: "Automated manual testing; fixed UI bugs and created UI components for new ALTO software.",
         technologies: "Angular, TypeScript, Cypress, Python"
     },
     {
