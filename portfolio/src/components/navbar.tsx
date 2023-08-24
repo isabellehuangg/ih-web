@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NavbarItem {
   link: string;
@@ -22,9 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarData }) => {
         <ul className="flex gap-1">
           {navbarData.map((item, index) => (
             <li key={index}>
-              <a href={item.link} className="text-green font-semibold m-2 py-1 px-2 hover:underline">
-                {item.heading}
-              </a>
+              <Link href={item.link} className="text-green font-semibold m-2 py-1 px-2 hover:underline">{item.heading}</Link>
             </li>
           ))}
         </ul>
