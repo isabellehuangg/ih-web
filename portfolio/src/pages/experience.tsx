@@ -18,7 +18,7 @@ export default function Experiences() {
         <div className="flex min-h-screeen flex-col bg-beige justify-center items-center text-green">
         <h1 className="text-4xl font-bold mt-8 mb-6"><span className="gradient-text">Experience</span></h1>
           <Experience experienceData={ experience } />
-          <Link href="https://drive.google.com/file/d/1jch15nYlFBtXs3l4K4NwnZkwyv6HgHb9/view?usp=sharing" className="text-center text-beige p-2 sm:w-7/12 w-10/12 mb-4 gradient-button hover:bg-beige font-semibold border-0.5 border-beige rounded">View Resume</Link>
+          <Link href="https://drive.google.com/file/d/198ogzwicd2RFPAwLdy9LgcWGABg1euNp/view?usp=sharing" className="text-center text-beige p-2 sm:w-7/12 w-10/12 mb-4 gradient-button hover:bg-beige font-semibold border-0.5 border-beige rounded">View Resume</Link>
           <Image src="/smiski_shoulderstand.png" alt="Smiski doing yoga while thinking" width={130} height={120} className="ml-auto" />
         </div>
       </>
