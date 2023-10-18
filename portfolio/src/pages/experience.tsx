@@ -5,8 +5,6 @@ import Experience from "~/components/experience";
 import { experience } from "~/const/experience";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { a1 } from "~/const/ani";
 
 export default function Experiences() {
     return (
@@ -19,9 +17,7 @@ export default function Experiences() {
         <Navbar navbarData={homeData} />
         <div className="flex min-h-screeen flex-col bg-beige justify-center items-center text-green">
         <h1 className="text-4xl font-bold mt-8 mb-6">
-          <motion.div initial="hidden" animate="show" variants={a1}>
             <span className="gradient-text">Experience</span>
-          </motion.div>
         </h1>
           <Experience experienceData={ experience } />
           <Link href="https://drive.google.com/file/d/198ogzwicd2RFPAwLdy9LgcWGABg1euNp/view?usp=sharing" className="text-center text-beige p-2 sm:w-7/12 w-10/12 mb-4 gradient-button hover:bg-beige font-semibold border-0.5 border-beige rounded">View Resume</Link>
