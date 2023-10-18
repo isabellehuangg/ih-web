@@ -1,5 +1,5 @@
 // Testing out animations ..
-import { Variants } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 export const fadeInAnimation = (direction: string, type: string, delay: number, duration: number): Variants => {
   return {

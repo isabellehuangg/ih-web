@@ -1,5 +1,6 @@
 export const experience = [
     {
+        id: 0,
         role: "Software Test Engineer",
         company: "Nicoya",
         time: "May 2023 - Aug. 2023",
@@ -7,6 +8,7 @@ export const experience = [
         technologies: "Angular, TypeScript, Cypress, Python"
     },
     {
+        id: 1,
         role: "Software Developer",
         company: "UW Midnight Sun",
         time: "Jun. 2023 - Present",
