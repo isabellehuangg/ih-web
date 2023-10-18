@@ -1,6 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { a2 } from '~/const/ani';
 
 interface ExperienceItem {
   id: number,
@@ -19,7 +17,6 @@ const Experience: React.FC<ExperienceProps> = ({ experienceData }) => {
   return (
     <div className='sm:w-7/12 w-10/12'>
       {experienceData.map((experience) => (
-        <motion.div initial="hidden" animate="show" variants={a2}>
         <div key={experience.id} className='text-green border-2 border-green rounded p-4 mb-5'>
           <h1 className="text-2xl font-semibold text-green"><span className="gradient-text">{experience.role}</span> @ {experience.company}</h1>
           <p className="mt-0.5 mb-2">{ experience.time }</p>
@@ -28,7 +25,6 @@ const Experience: React.FC<ExperienceProps> = ({ experienceData }) => {
             <li> <span className="gradient-text font-semibold">Technologies:</span> { experience.technologies } </li>
           </ul>
         </div>
-        </motion.div>
       ))}
     </div>
   );
