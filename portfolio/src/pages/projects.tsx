@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Navbar from "~/components/navbar";
-import { homeData } from "~/data/project";
+import { homeData } from "~/const/project";
 import Project from "~/components/project";
-import { projects } from "~/data/constants";
+import { projects } from "~/const/constants";
 import Image from "next/image";
 
 export default function Home() {

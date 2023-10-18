@@ -1,15 +1,15 @@
 export const projects = [
     {
-        title: "Disruptive",
-        link: "https://github.com/Bobliuuu/Disruptive",
-        description: "A funding DAO platform for investors to seek out insights/connections from microaquisitions/portfolios. Awarded Best Use of Hedera @ Hackthe6ix.",
-        techstack: "Next.js, Tailwind CSS, Typescript, Firebase, ..."
-    },
-    {
         title: "Hyrule Bakery",
         link: "https://github.com/isabellehuangg/Hyrule-Bakery",
         description: "A recipe generator that recommends Zelda: Tears of the Kingdom game recipes from user inputted ingredients",
         techstack: "React.js, Flask, PostgreSQL"
+    },
+    {
+        title: "Disruptive",
+        link: "https://github.com/Bobliuuu/Disruptive",
+        description: "A funding DAO platform for investors to seek out insights/connections from microaquisitions/portfolios. Awarded Best Use of Hedera @ Hackthe6ix.",
+        techstack: "Next.js, Tailwind CSS, Typescript, Firebase, ..."
     },
     {
         title: "trimLink",
