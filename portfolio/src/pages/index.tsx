@@ -25,7 +25,8 @@ export default function Home() {
           </h1>
           <div className="text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12">
             <motion.div initial="hidden" animate="show" variants={a3}>
-                I am a Computer Engineering student at the University of Waterloo, interested in software development and Mob Psycho.
+                I am a Computer Engineering student at the University of Waterloo, interested in software development and Mob Psycho. <br />
+                Incoming SWD @ Miovision
             </motion.div>
           </div>
         </div>
