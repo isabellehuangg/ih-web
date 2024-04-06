@@ -1,5 +1,11 @@
 export const projects = [
     {
+        title: "Icy Insights",
+        link: "https://github.com/jessica2673/Icy-Insights",
+        description: "An application that determines the best route in the Winter from point A --> B in the GTA, based on snow plow pathways and hazardous intersections",
+        techstack: "React.js, Express.js, MongoDB, Node.js, Google Maps API"
+    },
+    {
         title: "Hyrule Bakery",
         link: "https://github.com/isabellehuangg/Hyrule-Bakery",
         description: "A recipe generator that recommends Zelda: Tears of the Kingdom game recipes from user inputted ingredients",

@@ -14,17 +14,17 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ projectData }) => {
   return (
-    <div className='sm:w-7/12 w-10/12'>
+    <div className='all-li'>
       {projectData.map((project, index) => (
-        <div key={index} className='text-green border-2 border-green rounded p-4 mb-5'>
-          <div className='flex flex-row gap-2 items-baseline'>
-            <h1 className="text-2xl font-semibold gradient-text">{project.title}</h1>
-            <a href={project.link} className='hover:text-lightgreen duration-500 hover:scale-110'>
+        <div key={index} className='listed-item'>
+          <div className='pt-align'>
+            <h1 className="li-title">{project.title}</h1>
+            <a href={project.link} className='hover-icon'>
                 <FaGithub size={22} />
             </a>
           </div>
-          <p className='my-2'>{project.description}</p>
-          <p><span className='font-semibold mb-2'>Technologies: </span>{project.techstack}</p>
+          <p className='li-description'>{project.description}</p>
+          <p><span className='li-tech'>Technologies: </span>{project.techstack}</p>
         </div>
       ))}
     </div>

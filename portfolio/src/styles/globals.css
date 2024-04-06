@@ -22,23 +22,30 @@ html {
         color: transparent;
     }
 
-    .min-h-screeen {
+    .min-h-screen {
         min-height: calc(100vh - 58px);
     }
 
     .hover-icon {
-        @apply hover:text-lightgreen duration-300 hover:scale-110
+        @apply hover:text-lightgreen duration-500 hover:scale-110
     }
 
     .page {
-        @apply flex min-h-screeen flex-col bg-beige justify-center items-center text-green
+        /* page formatting */
+        @apply flex min-h-screen flex-col bg-beige justify-center items-center text-green
+    }
+
+    .navbar-items {
+        @apply text-green font-semibold m-2 py-1 px-2 hover:underline
     }
 
     .title {
+        /* for home and contact pages */
         @apply text-4xl font-bold text-center sm:items-center
     }
 
     .title2 {
+        /* for projects, experiences pages */
         @apply text-4xl font-bold mt-8 mb-6
     }
 
@@ -46,15 +53,42 @@ html {
         @apply text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12
     }
 
-    .links {
-        @apply flex flex-row gap-2 mt-3
-    }
-
-    .navbar-items {
-        @apply text-green font-semibold m-2 py-1 px-2 hover:underline
-    }
-
     .resume-button {
         @apply text-center text-beige p-2 sm:w-7/12 w-10/12 mb-4 gradient-button font-semibold rounded
+    }
+
+    .all-li {
+        @apply sm:w-7/12 w-10/12
+    }
+
+    .listed-item {
+        /* either 1 project or experience */
+        @apply text-green border-2 border-green rounded p-4 mb-5
+    }
+
+    .li-title {
+        @apply text-2xl font-semibold gradient-text
+    }
+
+    .li-tech {
+        @apply font-semibold mb-2
+    }
+
+    .li-description {
+        @apply my-2
+    }
+
+    .li-time {
+        @apply mt-0.5 mb-2 text-lg
+    }
+
+    .pt-align {
+        /* align github & project title in 1 line */
+        @apply flex flex-row gap-2 items-baseline
+    }
+
+    .links {
+        /* links on contact page */
+        @apply flex flex-row gap-2 mt-3
     }
 }
