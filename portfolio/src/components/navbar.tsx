@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarData }) => {
         <ul className="flex gap-1">
           {navbarData.map((item, index) => (
             <li key={index}>
-              <Link href={item.link} className="text-green font-semibold m-2 py-1 px-2 hover:underline">{item.heading}</Link>
+              <Link href={item.link} className="navbar-items">{item.heading}</Link>
             </li>
           ))}
         </ul>

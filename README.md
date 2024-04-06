@@ -1,2 +1,2 @@
 # ih-web
-see code in portfolio folder
+see code in portfolio folder ^_^
