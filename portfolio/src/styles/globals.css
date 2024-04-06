@@ -35,7 +35,23 @@ html {
         @apply flex min-h-screen flex-col bg-beige justify-center items-center text-green
     }
 
+    .navbar {
+        @apply flex flex-row items-center justify-between p-2 gradient-nav border-b-2 border-green
+    }
+
+    .navbar-icon {
+        @apply flex items-center
+    }
+
+    .navbar-rhs {
+        @apply ml-auto
+    }
+    
     .navbar-items {
+        @apply flex gap-1
+    }
+
+    .navbar-item {
         @apply text-green font-semibold m-2 py-1 px-2 hover:underline
     }
 
