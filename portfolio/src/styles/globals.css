@@ -23,7 +23,7 @@ html {
     }
 
     .min-h-screen {
-        min-height: calc(100vh - 58px);
+        min-height: 100%;
     }
 
     .hover-icon {
