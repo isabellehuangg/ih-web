@@ -9,15 +9,15 @@ html {
 @layer components {
     
     .gradient-nav {
-        @apply bg-gradient-to-b from-[lightgreen] to-[beige]
+        @apply bg-gradient-to-b from-[#eff0ee] to-[#eff0ee]
     }
 
     .gradient-button {
-        @apply bg-gradient-to-tl from-[lightgreen] to-[green]
+        @apply bg-gradient-to-tl from-[#617dd2] to-[#0a1975]
     }
 
     .gradient-text {
-        background-image: linear-gradient(to bottom, lightgreen, green);
+        background-image: linear-gradient(to bottom, #617dd2, #0a1975);
         background-clip: text;
         color: transparent;
     }

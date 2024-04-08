@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        beige: '#F7F7F1',
-        green: "#00a144",
-        lightgreen: "#B5D881",
+        beige: '#eff0ee',
+        green: "#0a1975",
+        lightgreen: "#617dd2",
         yellow: "#EDDa01"
       }
     },
