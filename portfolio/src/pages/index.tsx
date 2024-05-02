@@ -13,13 +13,10 @@ export default function Home() {
         <div className="page">
           <Image src="/smiski_yoga.png" alt="Smiski doing yoga" width={120} height={120} className="ml-2" />
           <h1 className="title">
-            Hello, Im <span className="gradient-text">Isabelle</span>!
+            Hello, I'm <span className="gradient-text">Isabelle</span>!
           </h1>
           <div className="description">
-            I'm a Computer Engineering student at the University of Waterloo, entering my 2B term; currently working on backend development @ <em><a className="highlight" href="https://teamwaterloop.ca/">Waterloop</a></em>, HCI research @ <em><a className="highlight" href="https://uwaterloo.ca/social-intelligent-robotics-research-lab/">SIRRL</a></em>. In my spare time, I attempt drawing & long distance running. Key word being attempt... ಥ_ಥ 
-          {/* </div>
-          <div className="description"> */}
-            {/* In my spare time, I attempt drawing & long distance running. Key word being attempt... ಥ_ಥ  */}
+            I am a Computer Engineering student at the University of Waterloo, entering my 2B term; currently working on backend development @ <em><a className="highlight" href="https://teamwaterloop.ca/">Waterloop</a></em>, HCI research @ <em><a className="highlight" href="https://uwaterloo.ca/social-intelligent-robotics-research-lab/">SIRRL</a></em>. In my spare time, I attempt drawing & long distance running. Key word being attempt... ಥ_ಥ 
           </div>
           <div className="description">
             Always open to new connections!
