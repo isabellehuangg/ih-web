@@ -12,6 +12,16 @@ html {
         @apply bg-gradient-to-b from-[#eff0ee] to-[#eff0ee]
     }
 
+    .highlight-text {
+        background-image: linear-gradient(to bottom, #05a3fd, #3ac7f1);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .highlight {
+        @apply highlight-text font-semibold 
+    }
+
     .gradient-button {
         @apply bg-gradient-to-tl from-[#617dd2] to-[#0a1975]
     }
@@ -23,7 +33,7 @@ html {
     }
 
     .min-h-screen {
-        min-height: 100%;
+        min-height: calc(100vh - 53px);
     }
 
     .hover-icon {
@@ -57,7 +67,7 @@ html {
 
     .title {
         /* for home and contact pages */
-        @apply text-4xl font-bold text-center sm:items-center
+        @apply text-4xl font-bold sm:items-center
     }
 
     .title2 {
@@ -66,7 +76,7 @@ html {
     }
 
     .description {
-        @apply text-lg flex items-center mt-3 justify-center h-full text-center sm:w-7/12 w-10/12
+        @apply text-base items-center mt-3 justify-center text-center sm:w-7/12 w-8/12
     }
 
     .resume-button {

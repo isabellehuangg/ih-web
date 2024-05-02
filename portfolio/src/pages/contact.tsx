@@ -13,7 +13,7 @@ export default function Home() {
       <div className="page">
         <Image src="/smiski_v.png" alt="Smiski doing yoga in a V" width={120} height={120} className="ml-2" />
         <h1 className="title">
-          <span className="gradient-text">Lets Connect</span>!
+          <span className="gradient-text">About Me</span>!
         </h1>
         <div className= "description">
             I am always open to opportunities related to full-stack development and embedded programming. You can contact me through:

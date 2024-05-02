@@ -6,7 +6,7 @@ export default function DefaultHead() {
     <Head>
       <title>Isabelle Huang</title>
       <meta name="description" content="Personal Portfolio" />
-      <link rel="icon" href="/smiski_laptop.png" />
+      <link rel="icon" href="/isabelle.png" />
     </Head>
   );
 }
