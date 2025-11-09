@@ -80,7 +80,7 @@ html {
   }
 
   .title {
-    @apply text-4xl font-bold sm:items-center;
+    @apply text-5xl font-bold sm:items-center;
   }
 
   .title2 {
@@ -88,7 +88,7 @@ html {
   }
 
   .description {
-    @apply text-base items-center mt-3 justify-center text-center sm:w-7/12 w-8/12;
+    @apply text-base leading-relaxed items-center mt-3 justify-center text-left sm:w-7/12 w-8/12;
   }
 
   .resume-button {

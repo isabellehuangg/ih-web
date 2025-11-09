@@ -11,15 +11,17 @@ export default function Home() {
       <DefaultHead />
       <Navbar navbarData={homeData} />
         <div className="page">
-          <Image src="/smiski_yoga.png" alt="Smiski doing yoga" width={120} height={120} className="ml-2" />
+          <Image src="/waiiiit.JPG" alt="Isabelle Waving" width={120} height={120} className="waiiiit" />
           <h1 className="title">
             Hello, I&apos;m <span className="gradient-text">Isabelle</span>!
           </h1>
           <div className="description">
-            I am a Computer Engineering student at the University of Waterloo, entering my 2B term; currently working on backend development @ <em><a className="highlight" href="https://teamwaterloop.ca/">Waterloop</a></em>, HCI research @ <em><a className="highlight" href="https://uwaterloo.ca/social-intelligent-robotics-research-lab/">SIRRL</a></em>. In my spare time, I attempt drawing & long distance running. Key word being attempt... ಥ_ಥ 
+            I&apos;m a 3B Computer Engineering student at the University of Waterloo. 
+            My previous internship experience has involved software development at <em><a className="highlight" href="https://www.autodesk.com/ca-en/industry/media-entertainment/">Autodesk</a></em>, Ford Motor Company, and Miovision and software testing at Nicoya.
+            I'm currently developing software for the hiring process at UW Blueprint, and have worked on Furhat Robots at <em><a className="highlight" href="https://uwaterloo.ca/social-intelligent-robotics-research-lab/">SIRRL</a></em>.
           </div>
           <div className="description">
-            Always open to new connections!
+            My experience has involved C++/Python with a focus in graphics development, backend systems, and optimization. Always open to new connections!
           </div>
           <div className="links">
             {links.map((link, index) => {
