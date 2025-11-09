@@ -11,7 +11,9 @@ export default function Home() {
       <DefaultHead />
       <Navbar navbarData={homeData} />
         <div className="page">
-          <Image src="/waiiiit.JPG" alt="Isabelle Waving" width={120} height={120} className="waiiiit" />
+          <div className="surround">
+             <Image src="/waiiiit.JPG" alt="Isabelle Waving" width={700} height = {700} className="waiiiit" />
+          </div>
           <h1 className="title">
             Hello, I&apos;m <span className="gradient-text">Isabelle</span>!
           </h1>
@@ -21,7 +23,7 @@ export default function Home() {
             I'm currently developing software for the hiring process at UW Blueprint, and have worked on Furhat Robots at <em><a className="highlight" href="https://uwaterloo.ca/social-intelligent-robotics-research-lab/">SIRRL</a></em>.
           </div>
           <div className="description">
-            My experience has involved C++/Python with a focus in graphics development, backend systems, and optimization. Always open to new connections!
+            My experience has involved C++/Python with a focus in graphics development, backend systems, and optimization. For more details, check out my experience and projects from the navbar. Always open to new connections!
           </div>
           <div className="links">
             {links.map((link, index) => {

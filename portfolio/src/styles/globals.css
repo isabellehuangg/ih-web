@@ -80,7 +80,7 @@ html {
   }
 
   .title {
-    @apply text-5xl font-bold sm:items-center;
+    @apply text-5xl font-bold sm:items-center sm:w-7/12 w-8/12;
   }
 
   .title2 {
@@ -133,4 +133,12 @@ html {
   .links {
     @apply flex flex-row gap-2 mt-3;
   }
+
+    .waiiiit {
+        @apply rounded md:w-64 md:h-64 w-48 h-48 max-h-full;
+    }
+
+    .surround {
+        @apply pb-8 pt-2 md:pb-12;
+    }
 }
