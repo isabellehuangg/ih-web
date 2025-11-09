@@ -20,125 +20,149 @@ html {
 
 @layer components {
 
-  .gradient-nav {
-    @apply bg-gradient-to-b from-[var(--gradient-nav-start)] to-[var(--gradient-nav-end)];
-  }
+    .gradient-nav {
+        @apply bg-gradient-to-b from-[var(--gradient-nav-start)] to-[var(--gradient-nav-end)];
+    }
 
-  .highlight {
-    background-image: linear-gradient(to bottom, #05a3fd, #3ac7f1);
-    background-clip: text;
-    color: transparent;
-    @apply font-semibold;
-  }
+    .highlight {
+        background-image: linear-gradient(to bottom, #05a3fd, #3ac7f1);
+        background-clip: text;
+        color: transparent;
+        @apply font-semibold;
+    }
 
-  .gradient-button {
-    @apply bg-gradient-to-tl from-[var(--gradient-button-start)] to-[var(--gradient-button-end)];
-  }
+    .gradient-button {
+        @apply bg-gradient-to-tl from-[var(--gradient-button-start)] to-[var(--gradient-button-end)];
+    }
 
-  .gradient-text {
-    background-image: linear-gradient(to bottom, #617dd2, #0a1975);
-    background-clip: text;
-    color: transparent;
-  }
+    .gradient-text {
+        background-image: linear-gradient(to bottom, #617dd2, #0a1975);
+        background-clip: text;
+        color: transparent;
+    }
 
-  .min-h-screen {
-    min-height: calc(100vh - 53px);
-  }
+    .min-h-screen {
+        min-height: calc(100vh - 53px);
+    }
 
-  .hover-icon {
-    @apply duration-500 hover:scale-110;
-    color: var(--color-lightgreen);
-  }
+    .hover-icon {
+        @apply duration-500 hover:scale-110;
+        color: var(--color-lightgreen);
+    }
 
-  .page {
-    @apply flex min-h-screen flex-col justify-center items-center;
-    background-color: var(--color-beige);
-    color: var(--color-green);
-  }
+    .page {
+        @apply flex min-h-screen flex-col justify-center items-center;
+        background-color: var(--color-beige);
+        color: var(--color-green);
+    }
 
-  .navbar {
-    @apply flex flex-row items-center justify-between p-2 border-b-2;
-    background: linear-gradient(to bottom, var(--gradient-nav-start), var(--gradient-nav-end));
-    border-color: var(--color-green);
-  }
+    .navbar {
+        @apply flex flex-row items-center justify-between p-2 border-b-2;
+        background: linear-gradient(to bottom, var(--gradient-nav-start), var(--gradient-nav-end));
+        border-color: var(--color-green);
+    }
 
-  .navbar-icon {
-    @apply flex items-center;
-  }
+    .navbar-icon {
+        @apply flex items-center;
+    }
 
-  .navbar-rhs {
-    @apply ml-auto;
-  }
+    .navbar-rhs {
+        @apply ml-auto;
+    }
 
-  .navbar-items {
-    @apply flex gap-1;
-  }
+    .navbar-items {
+        @apply flex gap-1;
+    }
 
-  .navbar-item {
-    @apply font-semibold m-2 py-1 px-2 hover:underline;
-    color: var(--color-green);
-  }
+    .navbar-item {
+        @apply font-semibold m-2 py-1 px-2 hover:underline;
+        color: var(--color-green);
+    }
 
-  .title {
-    @apply text-5xl font-bold sm:items-center sm:w-7/12 w-8/12;
-  }
+    .title {
+        @apply text-5xl font-bold sm:items-center sm:w-7/12 w-8/12;
+    }
 
-  .title2 {
-    @apply text-4xl font-bold mt-8 mb-6;
-  }
+    .title2 {
+        @apply text-4xl font-bold mt-8 mb-6;
+    }
 
-  .description {
-    @apply text-base leading-relaxed items-center mt-3 justify-center text-left sm:w-7/12 w-8/12;
-  }
+    .description {
+        @apply text-base leading-relaxed items-center mt-3 justify-center text-left sm:w-7/12 w-8/12;
+    }
 
-  .resume-button {
-    @apply text-center p-2 sm:w-7/12 w-10/12 mb-4 font-semibold rounded;
-    color: var(--color-beige);
-    background: linear-gradient(to top left, var(--gradient-button-start), var(--gradient-button-end));
-  }
+    .resume-button {
+        @apply text-center p-2 sm:w-7/12 w-10/12 mb-4 font-semibold rounded;
+        color: var(--color-beige);
+        background: linear-gradient(to top left, var(--gradient-button-start), var(--gradient-button-end));
+    }
 
-  .all-li {
-    @apply sm:w-7/12 w-10/12;
-  }
+    .all-li {
+        @apply sm:w-7/12 w-10/12;
+    }
 
-  .listed-item {
-    @apply rounded p-4 mb-5 border-2;
-    border-color: var(--color-green);
-    color: var(--color-green);
-  }
+    .listed-item {
+        @apply rounded p-4 mb-5 border-2;
+        border-color: var(--color-green);
+        color: var(--color-green);
+    }
 
-  .li-title {
-    @apply text-2xl font-semibold;
-    background: linear-gradient(to bottom, #617dd2, #0a1975);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+    .li-title {
+        @apply text-2xl font-semibold;
+        background: linear-gradient(to bottom, #617dd2, #0a1975);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 
-  .li-tech {
-    @apply font-semibold mb-2;
-  }
+    .li-tech {
+        @apply font-semibold mb-2;
+    }
 
-  .li-description {
-    @apply my-2;
-  }
+    .li-description {
+        @apply my-2;
+    }
 
-  .li-time {
-    @apply mt-0.5 mb-2 text-lg;
-  }
+    .li-time {
+        @apply mt-0.5 mb-2 text-lg;
+    }
 
-  .pt-align {
-    @apply flex flex-row gap-2 items-baseline;
-  }
+    .pt-align {
+        @apply flex flex-row gap-2 items-baseline;
+    }
 
-  .links {
-    @apply flex flex-row gap-2 mt-3;
-  }
+    .links {
+        @apply flex flex-row gap-2 mt-3 pb-5;
+    }
 
-    .waiiiit {
-        @apply rounded md:w-64 md:h-64 w-48 h-48 max-h-full;
+    @media (min-width: 768px) {
+    .links {
+        @apply pb-0;
+    }
+}
+
+
+    .page {
+        @apply flex flex-col items-center justify-start bg-[var(--color-beige)] text-[var(--color-green)];
     }
 
     .surround {
-        @apply pb-8 pt-2 md:pb-12;
+        @apply pt-6 pb-2 md:py-12;
+    }
+
+    /* HERO */
+    .waiiiit {
+        @apply rounded w-48 h-48 md:w-64 md:h-64 object-cover;
+    }
+    .title {
+        @apply text-4xl md:text-5xl font-bold mt-6 mb-4 text-center;
+    }
+    .gradient-text {
+        background-image: linear-gradient(to bottom, #617dd2, #0a1975);
+        background-clip: text;
+        color: transparent;
+    }
+    .description {
+        @apply text-base md:text-lg leading-relaxed text-left md:text-left max-w-3xl mb-4 px-4;
+        color: var(--color-green);
     }
 }

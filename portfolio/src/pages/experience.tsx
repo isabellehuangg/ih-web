@@ -16,7 +16,7 @@ export default function Experiences() {
             <span className="gradient-text">Experience</span>
         </h1>
           <Experience experienceData={ experience } />
-          <Link href="https://drive.google.com/file/d/198ogzwicd2RFPAwLdy9LgcWGABg1euNp/view?usp=sharing" className="resume-button">View Resume</Link>
+          <Link href="https://drive.google.com/file/d/1OsB9SVS5pSBk3y9VUDJXdloUK1XBDykK/view?usp=sharing" className="resume-button">View Resume</Link>
           <Image src="/smiski_shoulderstand.png" alt="Smiski doing yoga while thinking" width={130} height={120} className="ml-auto" />
         </div>
       </>
