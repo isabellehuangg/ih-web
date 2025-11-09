@@ -1,120 +1,136 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-beige: #eff0ee;
+  --color-green: #0a1975;
+  --color-lightgreen: #617dd2;
+  --color-yellow: #EDDa01;
+
+  --gradient-nav-start: #eff0ee;
+  --gradient-nav-end: #eff0ee;
+  --gradient-button-start: #617dd2;
+  --gradient-button-end: #0a1975;
+
+  --font-display: "Satoshi", sans-serif;
+}
 
 html {
-    @apply scroll-smooth !important;
+  @apply scroll-smooth;
 }
 
 @layer components {
-    
-    .gradient-nav {
-        @apply bg-gradient-to-b from-[#eff0ee] to-[#eff0ee]
-    }
 
-    .highlight-text {
-        background-image: linear-gradient(to bottom, #05a3fd, #3ac7f1);
-        background-clip: text;
-        color: transparent;
-    }
+  .gradient-nav {
+    @apply bg-gradient-to-b from-[var(--gradient-nav-start)] to-[var(--gradient-nav-end)];
+  }
 
-    .highlight {
-        @apply highlight-text font-semibold 
-    }
+  .highlight {
+    background-image: linear-gradient(to bottom, #05a3fd, #3ac7f1);
+    background-clip: text;
+    color: transparent;
+    @apply font-semibold;
+  }
 
-    .gradient-button {
-        @apply bg-gradient-to-tl from-[#617dd2] to-[#0a1975]
-    }
+  .gradient-button {
+    @apply bg-gradient-to-tl from-[var(--gradient-button-start)] to-[var(--gradient-button-end)];
+  }
 
-    .gradient-text {
-        background-image: linear-gradient(to bottom, #617dd2, #0a1975);
-        background-clip: text;
-        color: transparent;
-    }
+  .gradient-text {
+    background-image: linear-gradient(to bottom, #617dd2, #0a1975);
+    background-clip: text;
+    color: transparent;
+  }
 
-    .min-h-screen {
-        min-height: calc(100vh - 53px);
-    }
+  .min-h-screen {
+    min-height: calc(100vh - 53px);
+  }
 
-    .hover-icon {
-        @apply hover:text-lightgreen duration-500 hover:scale-110
-    }
+  .hover-icon {
+    @apply duration-500 hover:scale-110;
+    color: var(--color-lightgreen);
+  }
 
-    .page {
-        /* page formatting */
-        @apply flex min-h-screen flex-col bg-beige justify-center items-center text-green
-    }
+  .page {
+    @apply flex min-h-screen flex-col justify-center items-center;
+    background-color: var(--color-beige);
+    color: var(--color-green);
+  }
 
-    .navbar {
-        @apply flex flex-row items-center justify-between p-2 gradient-nav border-b-2 border-green
-    }
+  .navbar {
+    @apply flex flex-row items-center justify-between p-2 border-b-2;
+    background: linear-gradient(to bottom, var(--gradient-nav-start), var(--gradient-nav-end));
+    border-color: var(--color-green);
+  }
 
-    .navbar-icon {
-        @apply flex items-center
-    }
+  .navbar-icon {
+    @apply flex items-center;
+  }
 
-    .navbar-rhs {
-        @apply ml-auto
-    }
-    
-    .navbar-items {
-        @apply flex gap-1
-    }
+  .navbar-rhs {
+    @apply ml-auto;
+  }
 
-    .navbar-item {
-        @apply text-green font-semibold m-2 py-1 px-2 hover:underline
-    }
+  .navbar-items {
+    @apply flex gap-1;
+  }
 
-    .title {
-        /* for home and contact pages */
-        @apply text-4xl font-bold sm:items-center
-    }
+  .navbar-item {
+    @apply font-semibold m-2 py-1 px-2 hover:underline;
+    color: var(--color-green);
+  }
 
-    .title2 {
-        /* for projects, experiences pages */
-        @apply text-4xl font-bold mt-8 mb-6
-    }
+  .title {
+    @apply text-4xl font-bold sm:items-center;
+  }
 
-    .description {
-        @apply text-base items-center mt-3 justify-center text-center sm:w-7/12 w-8/12
-    }
+  .title2 {
+    @apply text-4xl font-bold mt-8 mb-6;
+  }
 
-    .resume-button {
-        @apply text-center text-beige p-2 sm:w-7/12 w-10/12 mb-4 gradient-button font-semibold rounded
-    }
+  .description {
+    @apply text-base items-center mt-3 justify-center text-center sm:w-7/12 w-8/12;
+  }
 
-    .all-li {
-        @apply sm:w-7/12 w-10/12
-    }
+  .resume-button {
+    @apply text-center p-2 sm:w-7/12 w-10/12 mb-4 font-semibold rounded;
+    color: var(--color-beige);
+    background: linear-gradient(to top left, var(--gradient-button-start), var(--gradient-button-end));
+  }
 
-    .listed-item {
-        /* either 1 project or experience */
-        @apply text-green border-2 border-green rounded p-4 mb-5
-    }
+  .all-li {
+    @apply sm:w-7/12 w-10/12;
+  }
 
-    .li-title {
-        @apply text-2xl font-semibold gradient-text
-    }
+  .listed-item {
+    @apply rounded p-4 mb-5 border-2;
+    border-color: var(--color-green);
+    color: var(--color-green);
+  }
 
-    .li-tech {
-        @apply font-semibold mb-2
-    }
+  .li-title {
+    @apply text-2xl font-semibold;
+    background: linear-gradient(to bottom, #617dd2, #0a1975);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 
-    .li-description {
-        @apply my-2
-    }
+  .li-tech {
+    @apply font-semibold mb-2;
+  }
 
-    .li-time {
-        @apply mt-0.5 mb-2 text-lg
-    }
+  .li-description {
+    @apply my-2;
+  }
 
-    .pt-align {
-        /* align github & project title in 1 line */
-        @apply flex flex-row gap-2 items-baseline
-    }
+  .li-time {
+    @apply mt-0.5 mb-2 text-lg;
+  }
 
-    .links {
-        /* links on contact page */
-        @apply flex flex-row gap-2 mt-3
-    }
+  .pt-align {
+    @apply flex flex-row gap-2 items-baseline;
+  }
+
+  .links {
+    @apply flex flex-row gap-2 mt-3;
+  }
 }
